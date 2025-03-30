@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Monthly Quiz Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+        .container { max-width: 600px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px #ccc; }
+        .header { background: #007bff; color: white; padding: 10px; text-align: center; font-size: 20px; }
+        .content { padding: 20px; }
+        .table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .table th, .table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        .table th { background: #007bff; color: white; }
+        .footer { text-align: center; font-size: 12px; color: gray; padding-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Your Monthly Quiz Report</div>
+        <div class="content">
+            <p>Hi {{ user_name }},</p>
+            <p>Here is a summary of your quiz activity for the month:</p>
+
+            <table class="table">
+                <tr>
+                    <th>Total Quizzes Taken</th>
+                    <td>{{ total_quizzes }}</td>
+                </tr>
+                <tr>
+                    <th>Average Score</th>
+                    <td>{{ average_score }}</td>
+                </tr>
+            </table>
+
+            <p>Keep up the great work and continue improving your scores!</p>
+            <p><strong>Stay motivated and keep learning!</strong></p>
+        </div>
+    </div>
+</body>
+</html>
