@@ -77,11 +77,15 @@ mail = Mail(app)
 api = Api(app)
 
 CORS(app, resources={r"/*": {
-    "origins": ["http://localhost:5173"],
+    "origins": [
+        "http://localhost:5173",
+        "https://mad2-frontend.onrender.com"  # 👈 your deployed Vue app URL
+    ],
     "methods": ["GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS"],
     "allow_headers": ["Authorization", "Content-Type"],
     "supports_credentials": True
 }})
+
 
 # Ensure application context is pushed
 with app.app_context():
