@@ -1,0 +1,17 @@
+Flask
+flask-restful
+flask-mail
+flask-bcrypt
+flask-jwt-extended
+flask-login
+flask-cors
+flask-sqlalchemy
+celery
+jinja2
+logging
+jsonschema
+chart.js 
+vue-chartjs
+xlsx 
+jspdf@2.5.1 
+jspdf-autotable@3.5.28
