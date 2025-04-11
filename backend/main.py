@@ -135,7 +135,7 @@ api.add_resource(AdminUserDetailsAPI, '/api/admin-user-details')
 api.add_resource(AdminQuizDataAPI, '/api/admin-quiz-data')
 
 
-# Start Application
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
 
