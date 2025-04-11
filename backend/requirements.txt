@@ -10,8 +10,3 @@ celery
 jinja2
 logging
 jsonschema
-chart.js 
-vue-chartjs
-xlsx 
-jspdf@2.5.1 
-jspdf-autotable@3.5.28
