@@ -132,7 +132,6 @@ api.add_resource(AdminQuizDataAPI, '/api/admin-quiz-data')
 
 
 # Start Application
-if __name__ == '__main__':
-    add_admin()
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
 
