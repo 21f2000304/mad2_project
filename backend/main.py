@@ -79,7 +79,7 @@ api = Api(app)
 CORS(app, resources={r"/*": {
     "origins": [
         "http://localhost:5173",
-        "https://mad2-frontend.onrender.com"  # 👈 your deployed Vue app URL
+        "https://mad2-project-1.onrender.com"  # 👈 your deployed Vue app URL
     ],
     "methods": ["GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS"],
     "allow_headers": ["Authorization", "Content-Type"],
